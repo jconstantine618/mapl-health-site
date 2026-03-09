@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Nav from "@/components/nav";
-import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "MAPL Health | The Platform That Powers Independent Healthcare",
@@ -22,9 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <Nav />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );
